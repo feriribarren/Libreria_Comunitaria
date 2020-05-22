@@ -2,7 +2,7 @@ const ejemplosLibros=[
   {
     titulo:"El amor en tiempos de colera",
     autor:"Gabriel Garcia Marquez",
-    anioLanzamiento:1993,
+    anioLanzamiento:'1992',
     editorial:"San Sebastian",
     isbn: "1234593827364",
     alquileres:[
@@ -15,7 +15,7 @@ const ejemplosLibros=[
   {
     titulo:"El coronel no tiene quien le escriba",
     autor:"Gabriel Garcia Marquez",
-    anioLanzamiento:1989,
+    anioLanzamiento:'1989',
     editorial:"Galaxias",
     isbn: "1234583725361",
     alquileres:[
@@ -32,7 +32,7 @@ const ejemplosLibros=[
   {
     titulo:"La isla bajo el mar",
     autor:"Isabel Allende",
-    anioLanzamiento:1980,
+    anioLanzamiento:'1980',
     editorial:"Chile ltda",
     isbn: "1234772261251",
     alquileres:[
@@ -49,7 +49,7 @@ const ejemplosLibros=[
   {
     titulo:"En Cambio",
     autor:"Estanislao Bachrach",
-    anioLanzamiento:2010,
+    anioLanzamiento:'2010',
     editorial:"Caja de libros",
     isbn: "1234592030095",  
     alquileres:[
