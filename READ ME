@@ -23,18 +23,21 @@ Para esto:
   En cada Libro (cada elemento del array):
   2. se chequea si el isbn es el consultado por el cliente
     3. Si el isbn es el consultado por el cliente, se revisa el último elemento del array "alquileres"
-      Si el último elemento del array, tiene el valor de FALSE en la propiedad "devuelto" --> devuelve "Libro no disponible. A la espera de devolución".
-      Si el último elemento del array, tiene el valor de TRUE en la propiedad "devuelto" --> devuelve "Libro disponible para alquilar"
+      Si el último elemento del array, tiene el valor de FALSE en la propiedad "devuelto" --> devuelve 
+      "Libro no disponible. A la espera de devolución".
+      Si el último elemento del array, tiene el valor de TRUE en la propiedad "devuelto" --> devuelve 
+      "Libro disponible para alquilar"
       
 2- FAN DE AUTORES
-Para encontrar todos los libros DISPONIBLES para alquilar de un determinado autor, se busca entre todos los libros, se revisa si el autor 
-es el que busca el lector, y se consulta si está disponible. El resultado es un lsitado de libros disponibles para alquilar del autor en cuestión, más su isbn.
+Para encontrar todos los libros DISPONIBLES para alquilar de un determinado autor, se busca entre todos los libros, 
+se revisa si el autor es el que busca el lector, y se consulta si está disponible. El resultado es un listado de libros disponibles 
+para alquilar del autor en cuestión, más su isbn.
 
 Para esto: se recibe como parametro la lista de libros y el autor que se busca.
 1. Se recorre el array de libros.
   En cada libro:
     2. Se revisa si el autor coincide con el requerido por el lector.
-      Si no coincide, se prosigue con el siguiente libro.
+      Si no coincide, se sigue con el siguiente libro.
       Si coincide, 3. se chequea que esté disponible para alquilar (ver función usada anteriormente)
         4. Si está disponible, se agrega al array de libros del autor (previamente creado): título y su isbn para que lo pueda alquilar.
 
