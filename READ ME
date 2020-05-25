@@ -1,84 +1,22 @@
-/* El listado de libros (ejemplosLibros) será una lista (array) de objetos. Cada objeto es un libro. Cada libro tiene la siguiente información:
+/* El listado de libros (ejemplosLibros) será una lista (array) de objetos. 
+Cada objeto es un libro. Cada libro tiene la siguiente información:
 título (string), autor (string), año de lanzamiento (string), editorial (string), isbn(string), y alquileres (array). 
-Puntualmente "Alquileres", va a tener objetos que indican cada alquiler: cuándo se alquiló (es decir se entregó a un lector), y si éste fue devuelto
-o no, mediante una variable booleana:
-Cuando se da un libro se anota la fecha en que se lo entrega, y la propiedad devuelto queda en "false" hasta que ese libro se devuelve.
-Cuando dan ingreso a un libro devuelto, el valor cambia a true. Si el valor de devuelto es "false" es porque el libro no está disponible
-para alquilar, y por ende debe ser el ULTIMO registro. (Para que haya uno más, hay que esperar que se devuelva para volver a alquilarlo). 
+  Puntualmente "Alquileres", va a tener objetos que indican cada alquiler: cuándo se alquiló (es decir se entregó a un lector), y 
+  si éste fue devuelto o no, mediante una variable booleana:
+    Cuando se da un libro se anota la fecha en que se lo entrega, y la propiedad "devuelto" queda en "false" hasta que ese libro se 
+    devuelve.
+    Cuando dan ingreso a un libro devuelto, el valor cambia a true. 
+    
+    IMPORTANTE: Si el valor de devuelto es "false" es porque el libro no está disponible para alquilar, y por ende debe ser el ULTIMO 
+    registro. (Para que haya uno más, hay que esperar que se devuelva para volver a alquilarlo). 
 
 */
 
-const ejemplosLibros=[
-  {
-    titulo:"El amor en tiempos de colera",
-    autor:"Gabriel Garcia Marquez",
-    anioLanzamiento:'1992',
-    editorial:"San Sebastian",
-    isbn: "1234593827364",
-    alquileres:[
-      {
-        fecha: "20/05/2020",
-        devuelto: false,
-      },
-    ]  
-  },
-  {
-    titulo:"El coronel no tiene quien le escriba",
-    autor:"Gabriel Garcia Marquez",
-    anioLanzamiento:'1989',
-    editorial:"Galaxias",
-    isbn: "1234583725361",
-    alquileres:[
-      {
-        fecha: "20/04/2020",
-        devuelto: true,
-      },
-      {
-        fecha: "21/05/2020",
-        devuelto: false,
-      },
-    ]
-  },
-  {
-    titulo:"La isla bajo el mar",
-    autor:"Isabel Allende",
-    anioLanzamiento:'1980',
-    editorial:"Chile ltda",
-    isbn: "1234772261251",
-    alquileres:[
-      {
-        fecha: "20/04/2020",
-        devuelto: true,
-      },
-      {
-        fecha: "17/03/2020",
-        devuelto: true,
-      },
-    ]
-  },
-  {
-    titulo:"En Cambio",
-    autor:"Estanislao Bachrach",
-    anioLanzamiento:'2010',
-    editorial:"Caja de libros",
-    isbn: "1234592030095",  
-    alquileres:[
-      {
-        fecha: "10/01/2020",
-        devuelto: true,
-      },
-      {
-        fecha: "10/05/2020",
-        devuelto: false,
-      },
-    ]
-  },
-]
 
 /* 1- CONSULTA LIBRO
 Para saber si un libro está o no disponible, se lo busca entre el listado de libros. Se recibe su nro de isbn, y se devuelve:
 El título del libro, su isbn y el mensaje de:
-"Libro disponible para alquilar" o "Libro no disponible. A la espera de devolución".
+"disponible para alquilar" o "Libro no disponible. A la espera de devolución".
 
 Para esto:
 1. recorre el array de libros.
