@@ -20,23 +20,11 @@ const ejemplosLibros=[
     isbn: "1234512354785",  
     alquileres:[
       {
-        fecha: "10/01/2020",
-        devuelto: true,
-      },
-      {
         fecha: "10/01/2019",
         devuelto: true,
       },
       {
-        fecha: "10/03/2019",
-        devuelto: true,
-      },
-      {
-        fecha: "12/01/2020",
-        devuelto: true,
-      },
-      {
-        fecha: "20/01/2020",
+        fecha: "10/01/2020",
         devuelto: true,
       },
       {
@@ -44,11 +32,23 @@ const ejemplosLibros=[
         devuelto: true,
       },
       {
-        fecha: "12/01/2020",
+        fecha: "12/05/2020",
         devuelto: true,
       },
       {
-        fecha: "10/05/2020",
+        fecha: "15/05/2020",
+        devuelto: true,
+      },
+      {
+        fecha: "17/05/2020",
+        devuelto: true,
+      },
+      {
+        fecha: "20/05/2020",
+        devuelto: true,
+      },
+      {
+        fecha: "22/05/2020",
         devuelto: true,
       },
     ]
@@ -95,7 +95,7 @@ const ejemplosLibros=[
     isbn: "1234772261251",
     alquileres:[
       {
-        fecha: "20/04/2020",
+        fecha: "20/04/2019",
         devuelto: true,
       },
       {
@@ -141,7 +141,7 @@ const ejemplosLibros=[
         devuelto: true,
       },
       {
-        fecha: "12/01/2020",
+        fecha: "12/04/2020",
         devuelto: true,
       },
       {
@@ -174,7 +174,7 @@ const ejemplosLibros=[
         devuelto: true,
       },
       {
-        fecha: "12/01/2020",
+        fecha: "12/04/2020",
         devuelto: true,
       },
       {
