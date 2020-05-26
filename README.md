@@ -1,7 +1,7 @@
 # Libreria_Comunitaria
 Examen: Librería comunitaria
 
-/* El listado de libros (ejemplosLibros) será una lista (array) de objetos. 
+El listado de libros (ejemplosLibros) será una lista (array) de objetos. 
 Cada objeto es un libro. Cada libro tiene la siguiente información:
 título (string), autor (string), año de lanzamiento (string), editorial (string), isbn(string), y alquileres (array). 
   Puntualmente "Alquileres", va a tener objetos que indican cada alquiler: cuándo se alquiló (es decir se entregó a un lector), y 
@@ -13,10 +13,9 @@ título (string), autor (string), año de lanzamiento (string), editorial (strin
     IMPORTANTE: Si el valor de devuelto es "false" es porque el libro no está disponible para alquilar, y por ende debe ser el ULTIMO 
     registro. (Para que haya uno más, hay que esperar que se devuelva para volver a alquilarlo). 
 
-*/
 
 
-/* 1- CONSULTA LIBRO
+ 1- CONSULTA LIBRO
 Para saber si un libro está o no disponible, se lo busca entre el listado de libros. Se recibe su nro de isbn, y se devuelve:
 El título del libro, su isbn y el mensaje de:
 "disponible para alquilar" o "Libro no disponible. A la espera de devolución".
@@ -54,4 +53,4 @@ Para esto:
   3. Ordenamos el array de mayor a menor.
   4. Sólo devolvemos los 10 primeros.
 
-*/
+
